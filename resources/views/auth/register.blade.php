@@ -63,11 +63,11 @@
                                             </div>
                                         </div>
                                         <div class="mb-3">
-                                            <label for="username" class="form-label">Username <span
+                                            <label for="name" class="form-label">Name <span
                                                     class="text-danger">*</span></label>
                                             <input type="text" class="form-control @error('name') is-invalid @enderror"
-                                                name="name" value="{{ old('name') }}" id="username"
-                                                placeholder="Enter username" required>
+                                                name="name" value="{{ old('name') }}" id="name"
+                                                placeholder="Enter name" required>
                                             @error('name')
                                                 <span class="invalid-feedback" role="alert">
                                                     <strong>{{ $message }}</strong>
@@ -104,7 +104,7 @@
                                                 <i data-feather="lock"></i>
                                             </div>
                                         </div>
-                                        <div class="mb-3">
+                                        {{-- <div class="mb-3">
                                             <label for="input-avatar">Avatar <span class="text-danger">*</span></label>
                                             <input type="file" class="form-control @error('avatar') is-invalid @enderror"
                                                 name="avatar" id="input-avatar" required>
@@ -116,7 +116,7 @@
                                             <div class="">
                                                 <i data-feather="file"></i>
                                             </div>
-                                        </div>
+                                        </div> --}}
 
                                         <div class="mb-3">
                                             <p class="mb-0 fs-12 text-muted fst-italic">By registering you agree to the

@@ -32,7 +32,7 @@
             <div id="two-column-menu">
             </div>
             <ul class="navbar-nav" id="navbar-nav">
-                <li class="menu-title"><span>@lang('translation.menu')</span></li>
+                {{-- <li class="menu-title"><span>@lang('translation.menu')</span></li>
                 <li class="nav-item">
                     <a class="nav-link menu-link" href="#sidebarDashboards" data-bs-toggle="collapse" role="button"
                         aria-expanded="false" aria-controls="sidebarDashboards">
@@ -428,7 +428,14 @@
                             </li>
                         </ul>
                     </div>
-                </li> <!-- end Dashboard Menu -->
+                </li> <!-- end Dashboard Menu --> --}}
+
+                <li class="menu-title"><span>Administrator</span></li>
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="{{route('brands.index')}}">
+                        <i class="ri-honour-line"></i> <span>Brands</span>
+                    </a>
+                </li>
 
 
                 <li class="menu-title"><i class="ri-more-fill"></i> <span>@lang('translation.pages')</span></li>
