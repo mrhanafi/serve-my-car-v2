@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\BrandsController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\VehicleController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -21,6 +22,7 @@ Route::middleware('auth')->group(function () {
 
 Route::middleware('auth')->group(function(){
     Route::get('/brands',[BrandsController::class,'index'])->name('brands.index');
+    Route::get('/vehicles',[VehicleController::class,'index'])->name('vehicles.index');
 });
 
 require __DIR__.'/auth.php';

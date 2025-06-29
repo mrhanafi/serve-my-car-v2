@@ -90,7 +90,7 @@
                                                 </button>
                                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                                                     <a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#editModal" wire:click="editBrand({{$brand->id}})">Edit</a>
-                                                    <a class="dropdown-item" href="#" wire:click="">Delete</a>
+                                                    <a class="dropdown-item" href="#" wire:click="deleteBrand({{$brand->id}})">Delete</a>
                                                 </div>
                                             </div>
                                         </td>

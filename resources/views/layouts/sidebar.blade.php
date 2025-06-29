@@ -436,6 +436,11 @@
                         <i class="ri-honour-line"></i> <span>Brands</span>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="{{route('vehicles.index')}}">
+                        <i class="ri-honour-line"></i> <span>Vehicles</span>
+                    </a>
+                </li>
 
 
                 <li class="menu-title"><i class="ri-more-fill"></i> <span>@lang('translation.pages')</span></li>

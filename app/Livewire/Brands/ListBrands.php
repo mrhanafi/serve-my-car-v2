@@ -39,12 +39,22 @@ class ListBrands extends Component
             'name' => $this->brand
         ]);
 
+        LivewireAlert::title('Item Updated')
+            ->text('The item has been successfully updated.')
+            ->success()
+            ->show();
+
         // return redirect()->back();
     }
 
     public function deleteBrand(Brand $brand)
     {
         $brand->delete();
+        // dd($brand);
+        LivewireAlert::title('Item Deleted')
+            ->text('The item has been successfully deleted to the database.')
+            ->success()
+            ->show();
     }
 
     public function render()
